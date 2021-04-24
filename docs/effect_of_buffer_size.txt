@@ -1,0 +1,57 @@
+Executed on Ubuntun VM running on VMWare Player
+
+Buffer Size: 100000
+Execution Time: 0:05.68elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 100000
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+4.55user 7.05system 0:05.68elapsed 204%CPU (0avgtext+0avgdata 52176maxresident)k
+56inputs+445880outputs (0major+12949minor)pagefaults 0swaps
+
+Buffer Size: 10000
+Execution Time: 0:08.58elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 10000
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+9.18user 10.34system 0:08.58elapsed 227%CPU (0avgtext+0avgdata 6420maxresident)k
+8inputs+445880outputs (0major+1568minor)pagefaults 0swaps
+
+Buffer Size: 1000
+Execution Time: 0:10.18elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 1000
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+14.37user 9.81system 0:10.18elapsed 237%CPU (0avgtext+0avgdata 2076maxresident)k
+24inputs+445880outputs (0major+352minor)pagefaults 0swaps
+
+Buffer Size: 100
+Execution Time: 0:20.87elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 100
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+38.90user 14.80system 0:20.87elapsed 257%CPU (0avgtext+0avgdata 2060maxresident)k
+8inputs+445880outputs (0major+119minor)pagefaults 0swaps
+
+Buffer Size: 10
+Execution Time: 0:32.17elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 10
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+60.60user 26.35system 0:32.17elapsed 270%CPU (0avgtext+0avgdata 1924maxresident)k
+8inputs+445880outputs (0major+104minor)pagefaults 0swaps
+
+Buffer Size: 5
+Execution Time: 0:39.50elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 5
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+77.37user 32.14system 0:39.50elapsed 277%CPU (0avgtext+0avgdata 2056maxresident)k
+0inputs+445880outputs (0major+100minor)pagefaults 0swaps
+
+Buffer Size: 2
+Execution Time: 0:53.02elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 2
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+105.28user 41.96system 0:53.02elapsed 277%CPU (0avgtext+0avgdata 1944maxresident)k
+0inputs+445880outputs (0major+101minor)pagefaults 0swaps
+
+Buffer Size: 1
+Execution Time: 0:48.07elapsed
+felix@ubuntu ~/c/c/ualbany-csi500-project2> time ./proc foo_1m ! --demo --buffersize 1
+Lines processed - reader: 1000000, character: 1000000, toUpper: 1000000, writer: 1000000
+97.39user 37.47system 0:48.07elapsed 280%CPU (0avgtext+0avgdata 1844maxresident)k
+8inputs+445880outputs (0major+101minor)pagefaults 0swaps
